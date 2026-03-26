@@ -7,7 +7,7 @@ import { useAuth } from '@clerk/clerk-react';
 import { addToFavorites, removeFromFavorites, setCurrentPage, setTotalPages } from '../store/gamesSlice';
 import { getGamesByFilters } from '../services/api';
 import Filters from '../components/Filters';
-
+import heroImage from '../hero-visual.png';
 const GAMES_PER_PAGE = 12;
 
 // const heroImages = [
@@ -179,7 +179,7 @@ const Home = () => {
       <Col md={6} className="mt-4 mt-md-0 text-center">
         <div className="hero-image-container">
           <img
-            src="hero-visual.png"
+            src={heroImage}
             alt="Gaming Hero Visual"
             className="hero-main-image"
           />
